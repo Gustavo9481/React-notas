@@ -1,25 +1,22 @@
-import logo from './logo.svg';
+import React, {useEffect} from 'react';
+import ReactDOM from 'react-dom';
 import './App.css';
+import ComponenteTitulo from './Componentes/ComponenteTitulo';
+import ComponenteBoton from './Componentes/ComponenteBoton.jsx';
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    return (
+        <div>
+            <section id="titulo">
+                < ComponenteTitulo />
+            </section>
+        </div>
+    )
 }
+
+
+
 
 export default App;
