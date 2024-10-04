@@ -10,7 +10,9 @@ function App() {
     return (
         <div>
             <section id="titulo">
-                < ComponenteTitulo />
+                < ComponenteTitulo 
+                    mensaje="Hello World - GUScode - Notas React" 
+                />
             </section>
         </div>
     )
