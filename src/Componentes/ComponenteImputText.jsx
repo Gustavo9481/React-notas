@@ -25,7 +25,8 @@ const ComponenteInputText = ({ valorInput, setValorInput }) => {
                 value={valorInput}
                 onChange={(event) => setValorInput(event.target.value)}
                 style={styleComponenteImputText}
-                className="styleComponenteInputText" 
+                className="styleComponenteInputText"
+                placeholder="ingrese su nombre"
             />
         </div>
     )

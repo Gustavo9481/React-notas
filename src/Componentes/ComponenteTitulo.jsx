@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
 /**
  * ComponenteTitulo: muestra un título h1 simple con sus estilos CSS 
@@ -18,11 +18,11 @@ const ComponenteTitulo = ({mensaje}) => {
         color: "#60D9FA"
     }
     return (
-        <div>
+        <>
             <h1 style={styleComponenteTitulo} className="styleComponenteTitulo">
                 {mensaje}
             </h1>
-        </div>
+        </>
     )
 }
 

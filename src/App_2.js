@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { Fragment, useState } from 'react';
 import ReactDOM from 'react-dom';
 import './App.css';
 import ComponenteInputText from './Componentes/ComponenteImputText';
@@ -7,15 +7,21 @@ import ComponenteTituloSaludo from './Componentes/ComponenteTituloSaludo';
 
 
 
+/**
+ * App_2: muestra los componentes ComponenteInputText, ComponenteBoton y
+ *  el dato que se ingresa en input en ComponenteTituloSaludo
+ *
+ *  @return {JSX.Element} - renderizado del input y boton con sus respectivos 
+ *    estilos CSS & el valor del input en mensaje de saludo
+ */
 function App_2() {
-    // almacen del valor de input y función para actualizarlo (modificarlo)
+ 
     const [valorInput, setValorInput] = useState("")
-    const [valorInput_2, setValorInput_2] = useState("")
-    // controlar la muestra del saludo
+    const [valorInput_2, setValorInput_2] = useState("") 
     const [saludo, setSaludo] = useState(false)  
 
     return (
-        <div>
+        <>
             <section id="input-text">
                 
                 <ComponenteInputText 
@@ -34,11 +40,17 @@ function App_2() {
             <section id="saludo">
                 {saludo && <ComponenteTituloSaludo valorInput_2={valorInput_2} />}  
             </section>
-        </div>
+        </>
     )
 }
 
-
-
-
 export default App_2;
+
+/** Comentarios por línea
+ * 19: Almacen del valor de input y función para actualizarlo (modificarlo)
+ * 20: Almacen del valor de input y función para actualizarlo (modificarlo)
+ *     Se usaran dos variables para poder borrar el input y conservar el valor
+ * 21: Booleano que condiciona la muestra del saludo
+ * 41: Renderizado de componente ComponenteTituloSaludo de manera condicionada
+ *     Si saludo=true se renderizará el componente con valorInput como parámetro
+ */
