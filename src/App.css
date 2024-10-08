@@ -1,3 +1,8 @@
+:root {
+    --turquesa: #60D9FA;
+    --hover: #034e63;
+}
+
 body {
     background-color: #292929;
     color: #E4E4E4;
@@ -34,4 +39,29 @@ body {
 
 .styleComponenteTitulo {
     font-size: 4rem;
+}
+
+.app_4-botones {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.video-boton:hover {
+    background-color: red;
+}
+
+.lista-nombres {
+    display: flex;
+    width: 100%;
+
+    li {
+        width: 90%;
+    }
+}
+
+.input-agregar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }

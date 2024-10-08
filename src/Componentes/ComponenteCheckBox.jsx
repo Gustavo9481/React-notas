@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React  from 'react';
 
 /**
  * ComponenteCheckBox: muestra una casilla de verificación para dar condición
@@ -9,7 +9,7 @@ import React, { Fragment } from 'react';
  * @param {function} props.setCheck - fuención para modificar vaor de check
  * @returns {JSX.Element} - renderizado del checkbox
  */
-const ComponenteCheckBox = ({check, setCheck}) => {
+const ComponenteCheckBox = ({ check, setCheck }) => {
 
     const actualizarCheck = (event) => {
         setCheck(event.target.checked); 
@@ -18,8 +18,8 @@ const ComponenteCheckBox = ({check, setCheck}) => {
     return (
         <>
             <input type="checkbox"
-                checked={check}
-                onChange={actualizarCheck}
+                checked={ check }
+                onChange={ actualizarCheck }
             />
         </>
     );

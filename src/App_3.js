@@ -13,18 +13,18 @@ import ComponenteParrafo from './Componentes/ComponenteParrafo';
 function App_3() {
 
     const [ check, setCheck ] = useState(false);
-     
+    
     return (
         <>
             <section id="chequeo">
                 <ComponenteCheckBox 
-                    check={check} 
-                    setCheck={setCheck} 
+                    check={ check } 
+                    setCheck={ setCheck } 
                 />
-                <ComponenteParrafo 
-                    check={check} 
-                    texto_parrafo="Este texto será tachado" 
-                />
+                <ComponenteParrafo  
+                    texto_parrafo="Este texto será tachado"
+                    check={ check }
+                />  
             </section>
         </>
     );

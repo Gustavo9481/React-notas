@@ -9,7 +9,7 @@ import React, { useContext } from 'react';
  * @param {boolean} props.check - estado de la propiedad checked de ComponenteCheckBox
  * @param {string} props.texto_parrafo - texto que se desea mostrar 
  */
-const ComponenteParrafo = ({ check, texto_parrafo }) => {
+const ComponenteParrafo = ({ texto_parrafo, check }) => {
     
     const styleComponenteParrafo = check
         ? { textDecoration: "line-through" }
@@ -18,7 +18,9 @@ const ComponenteParrafo = ({ check, texto_parrafo }) => {
     return (
         
         <>
-            <p style={styleComponenteParrafo}>{ texto_parrafo }</p>    
+            <p style={ styleComponenteParrafo } >
+                { texto_parrafo }
+            </p>    
         </>
 
     );
